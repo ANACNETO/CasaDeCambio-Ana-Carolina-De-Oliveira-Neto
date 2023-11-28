@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Casa de Cambio XPTO</title>
+    <link rel="shortcut icon" href="./assets/favicon-cambio.png" type="image/x-icon">
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Casa de Cambio XPTO</h1>
+    </header>
+    <main>
+        <form id="formCambio">
+
+            <label for="origem">Tenho: </label>
+            <select name="origem" id="origem" required>
+                <option value="BRL">BRL - Real</option>
+                <option value="AUD">AUD - Dolar Australiano</option>
+                <option value="CAD">CAD - Dolar Canadense</option>
+                <option value="CHF">CHF - Franco Suíço</option>
+                <option value="DKK">DKK - Coroa Dinnamarquesa</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="GBP">GBP - Libra Esterlina</option>
+                <option value="JPY">JPY - Iene</option>
+                <option value="NOK">NOK - Coroa Norueguesa</option>
+                <option value="SEK">SEK - Coroa Sueca</option>
+                <option value="USD">USD - Dolar Americano</option>
+            </select>
+
+            <label for="destino">Quero: </label>
+            <select name="destino" id="destino" required>
+                <option value="BRL">BRL - Real</option>
+                <option value="AUD">AUD - Dolar Australiano</option>
+                <option value="CAD">CAD - Dolar Canadense</option>
+                <option value="CHF">CHF - Franco Suíço</option>
+                <option value="DKK">DKK - Coroa Dinnamarquesa</option>
+                <option value="EUR">EUR - Euro</option>
+                <option value="GBP">GBP - Libra Esterlina</option>
+                <option value="JPY">JPY - Iene</option>
+                <option value="NOK">NOK - Coroa Norueguesa</option>
+                <option value="SEK">SEK - Coroa Sueca</option>
+                <option value="USD">USD - Dolar Americano</option>
+            </select>
+
+            <label for="valor">Insira o valor que deseja fazer o cambio</label>
+            <input type="number" name="valor" placeholder="valor" id="valor" required step="0.01">
+
+
+            <input type="submit" value="Converter">
+            <p id="resultado"></p>
+        </form>
+    </main>
+    <footer>
+        <p>A melhor taxa, o melhor serviço - XPTO Cambio.</p>
+    </footer>
+</body>
+
+</html>
